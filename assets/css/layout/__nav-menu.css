@@ -1,24 +1,22 @@
 .nav-menu {
-  display: flex;
-  margin-left: 3.7rem;
+  margin-left: 2rem;
 }
 
 .nav-menu-item {
-  flex-direction: row;
-  align-items: center;
+  display: inline;
 }
 
 .nav-menu-link {
   color: #fff;
   display: inline-block;
-  font-size: 0.9rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
   padding: 3rem 2rem;
   text-transform: uppercase;
 }
 
 .nav-menu-text {
-  margin-left: 1.1rem;
+  margin-left: 1rem;
   position: relative;
 }
 
@@ -38,4 +36,25 @@
 
 .nav-menu-item.dropdown {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+    margin-left: 0.3rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav-menu-item.mobile-hidden,
+  .nav-menu-text {
+    display: none;
+  }
+
+  .nav-menu-item.dropdown {
+    display: inline-block;
+  }
+
+  .nav-menu-link {
+    font-size: 1.8rem;
+    padding: 2.8rem 1.6rem;
+  }
 }

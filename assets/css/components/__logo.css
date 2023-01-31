@@ -1,21 +1,21 @@
 .logo {
   margin-left: 3.8rem;
-  padding-top: 1.6rem;
+  padding-top: 2rem;
 }
 
 .logo-link {
-  background: url(../../imgs/logo.svg) no-repeat;
+  background: url("../../imgs/logo.svg") no-repeat;
   background-position: center;
   background-size: 105%;
   display: inline-block;
-  height: 4rem;
-  width: 7.5rem;
+  height: 5rem;
+  width: 10rem;
 }
 
 @media screen and (max-width: 1024px) {
   .logo {
-    margin-left: 2.2rem;
-    padding-top: 2rem;
+    margin-left: 2.3rem;
+    padding-top: 3rem;
   }
 
   .logo-link {
