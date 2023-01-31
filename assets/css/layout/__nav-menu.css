@@ -1,0 +1,41 @@
+.nav-menu {
+  display: flex;
+  margin-left: 3.7rem;
+}
+
+.nav-menu-item {
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-menu-link {
+  color: #fff;
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 3rem 2rem;
+  text-transform: uppercase;
+}
+
+.nav-menu-text {
+  margin-left: 1.1rem;
+  position: relative;
+}
+
+.nav-menu-text::before {
+  background: #fff;
+  bottom: -1rem;
+  content: "";
+  height: 2px;
+  position: absolute;
+  transition: width 0.2s;
+  width: 0;
+}
+
+.nav-menu-link:hover .nav-menu-text::before {
+  width: 100%;
+}
+
+.nav-menu-item.dropdown {
+  display: none;
+}

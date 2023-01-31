@@ -2,3 +2,6 @@
 @import url(./base/_reset.css); /*Importação do ficheiro _reset.css*/
 @import url(./base/_fonts.css); /*Importação do ficheiro _fonts.css*/
 @import url(./base/_global.css); /*Importação do ficheiro _global.css*/
+@import url(./layout/__header.css); /*Importação do ficheiro __header.css*/
+@import url(./layout/__nav-menu.css); /*Importação do ficheiro __nav-menu.css*/
+@import url(./components/__logo.css); /*Importação do ficheiro __logo.css*/
