@@ -10,8 +10,9 @@ Link do Projeto:
 <h1/>Algumas Notas</h1>
 Neste projeto, foi simulado um sistema API com JSON, onde se encontram os filmes que foram implementados no projeto
 
-<h1/>Algumas Notas</h1>
+<h1/>Autor</h1>
 Fábio Raminhos Bronze
+<br/><br/>
 https://www.linkedin.com/in/f%C3%A1bio-bronze/
 
 <h1/>Imagens do Projeto Final</h1>
