@@ -1,0 +1,22 @@
+hmtl {
+  font-size: 62.5%; /*Utilização da medida (1REM = 10px)*/
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.background-fixed {
+  background: url(../../imgs/background.png) no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
