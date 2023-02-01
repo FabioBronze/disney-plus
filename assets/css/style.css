@@ -1,8 +1,10 @@
 @charset "UTF-8";
-@import url(./base/reset.css); /*Importação do ficheiro _reset.css*/
-@import url(./base/fonts.css); /*Importação do ficheiro _fonts.css*/
-@import url(./base/global.css); /*Importação do ficheiro _global.css*/
-@import url(./base/animations.css); /*Importação do ficheiro _animations.css*/
-@import url(./layout/header.css); /*Importação do ficheiro __header.css*/
-@import url(./layout/nav-menu.css); /*Importação do ficheiro __nav-menu.css*/
-@import url(./components/logo.css); /*Importação do ficheiro __logo.css*/
+@import url(./base/reset.css); /*Importação do ficheiro reset.css*/
+@import url(./base/fonts.css); /*Importação do ficheiro fonts.css*/
+@import url(./base/global.css); /*Importação do ficheiro global.css*/
+@import url(./base/animations.css); /*Importação do ficheiro animations.css*/
+@import url(./layout/header.css); /*Importação do ficheiro header.css*/
+@import url(./layout/nav-menu.css); /*Importação do ficheiro nav-menu.css*/
+@import url(./layout/user-menu.css); /*Importação do ficheiro user-menu.css*/
+@import url(./components/logo.css); /*Importação do ficheiro logo.css*/
+@import url(./components/user-profile.css); /*Importação do ficheiro user-profile*/
