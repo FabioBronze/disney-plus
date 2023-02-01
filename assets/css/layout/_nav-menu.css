@@ -4,15 +4,24 @@
 
 .nav-menu-item {
   display: inline;
+  vertical-align: top;
 }
 
+.nav-submenu-link,
 .nav-menu-link {
   color: #fff;
   display: inline-block;
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  padding: 3rem 2rem;
   text-transform: uppercase;
+}
+
+.nav-menu-link {
+  padding: 3rem 2rem;
+}
+
+.nav-submenu-link {
+  padding: 1.1rem 1.5rem;
 }
 
 .nav-menu-text {
@@ -20,9 +29,10 @@
   position: relative;
 }
 
+.nav-submenu-text::before,
 .nav-menu-text::before {
   background: #fff;
-  bottom: -1rem;
+  bottom: -0.8rem;
   content: "";
   height: 2px;
   position: absolute;
@@ -30,12 +40,33 @@
   width: 0;
 }
 
-.nav-menu-link:hover .nav-menu-text::before {
+.nav-menu-link:hover .nav-menu-text::before,
+.nav-submenu-link:hover .nav-submenu-text::before {
   width: 100%;
 }
 
 .nav-menu-item.dropdown {
   display: none;
+}
+
+.nav-menu-item.dropdown:hover .nav-submenu {
+  display: block;
+}
+
+.nav-submenu {
+  animation: showFade 0.5s;
+  background: #141414;
+  border: 0.1px solid #393939;
+  border-radius: 0.5rem;
+  display: none;
+  padding: 0.2rem 0;
+  position: relative;
+  top: -2rem;
+}
+
+.nav-submenu-text {
+  margin-left: 1rem;
+  position: relative;
 }
 
 @media screen and (max-width: 1024px) {
