@@ -5,5 +5,16 @@
 }
 
 .user-menu-current-profile {
-    
+  padding: 2rem 2rem;
+}
+
+.user-menu-profiles .user-profile {
+  padding: 0.4rem 2rem;
+}
+
+.user-menu-options .user-menu-link {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #c3c3c3;
+  padding: 1.3rem 2rem;
 }
