@@ -59,9 +59,13 @@
   border: 0.1px solid #393939;
   border-radius: 0.5rem;
   display: none;
+  margin: -2rem;
   padding: 0.2rem 0;
-  position: relative;
-  top: -2rem;
+  position: absolute;
+}
+
+.nav-submenu.active {
+  display: block;
 }
 
 .nav-submenu-text {
