@@ -4,12 +4,23 @@
   right: 0;
 }
 
+.user-menu-background {
+  animation: slideDown 0.4s;
+  background: #141414;
+  border: 1px solid #393939;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
 .user-menu-current-profile {
-  padding: 2rem 2rem;
+  padding: 2rem 4rem;
 }
 
 .user-menu-profiles .user-profile {
-  padding: 0.4rem 2rem;
+  padding: 0.4rem 0rem;
 }
 
 .user-menu-options .user-menu-link {
@@ -17,4 +28,54 @@
   display: inline-block;
   color: #c3c3c3;
   padding: 1.3rem 2rem;
+}
+
+.user-menu-profiles {
+  border-top: 1px solid #393939;
+  margin: 0rem 2rem;
+  padding-top: 1.5rem;
+}
+
+.user-menu-options {
+  padding-bottom: 2rem;
+}
+
+.user-menu-link:hover {
+  color: #fff;
+  transition: 0.1s;
+}
+
+.user-menu-current-profile,
+.user-menu-profiles,
+.user-menu-options {
+  position: relative;
+  z-index: 2;
+}
+.user-menu-profiles,
+.user-menu-options {
+  animation: showFade 0.3s;
+}
+
+.user-menu .show-hover {
+  display: none;
+}
+
+.user-menu:hover .show-hover,
+.user-menu:hover .user-profile-title {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .user-menu .user-profile-title {
+    display: none;
+  }
+
+  .user-menu .user-profile-avatar {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+
+  .user-menu-current-profile {
+    padding-top: 3.2rem;
+  }
 }
