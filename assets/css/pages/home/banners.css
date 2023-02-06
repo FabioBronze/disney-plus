@@ -11,9 +11,10 @@
 }
 
 .banner-slide-item {
-  margin: 0 1rem;
+  padding: 0 1rem;
   flex-shrink: 0;
   width: 90vw;
+  position: relative;
 }
 
 .banner-slide-link {
@@ -41,10 +42,16 @@
 }
 
 .banner-slide-title {
+  animation: slideLeft 1s;
   left: 0;
+  display: none;
   top: 0;
   width: 100%;
   position: absolute;
+}
+
+.banner-slide-title.active {
+  display: block;
 }
 
 .banners .arrow-prev {
@@ -52,6 +59,12 @@
   margin-left: 1.5rem;
   left: 0;
   position: absolute;
+}
+
+.banners .arrow-slider {
+  margin-top: -2rem;
+  position: absolute;
+  z-index: 2;
 }
 
 .banners .arrow-next {
@@ -63,5 +76,5 @@
 
 .banners .controls-slider {
   bottom: 1rem;
-  right: 10rem;
+  right: 13rem;
 }

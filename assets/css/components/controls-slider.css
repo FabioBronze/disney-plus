@@ -9,6 +9,7 @@
   background: none;
   color: #8c93a1;
   padding: 0 0.3rem;
+  cursor: pointer;
 }
 
 .controls-slider-items::before {
