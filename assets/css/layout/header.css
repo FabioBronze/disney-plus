@@ -1,4 +1,5 @@
 .header {
+  z-index: 3;
   display: flex;
   position: fixed;
   transition: background-color 0.2s;

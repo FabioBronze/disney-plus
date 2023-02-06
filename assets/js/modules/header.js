@@ -37,7 +37,7 @@ function start() {
   setlisteners();
 }
 
-// Exporta este documento js para o main.
+// Exporta este documento js para o main. (modules)
 export default {
   start,
 };

@@ -1,9 +1,18 @@
 .banners {
+  align-items: center;
+  display: flex;
   padding-top: 9.7rem;
+  overflow: hidden;
+}
+
+.banner-slide {
+  display: flex;
+  position: relative;
 }
 
 .banner-slide-item {
-  margin: 0 auto;
+  margin: 0 1rem;
+  flex-shrink: 0;
   width: 90vw;
 }
 
@@ -27,6 +36,7 @@
 
 .banner-slide-img {
   border-radius: 0.5rem;
+  display: block;
   width: 100%;
 }
 
@@ -35,4 +45,23 @@
   top: 0;
   width: 100%;
   position: absolute;
+}
+
+.banners .arrow-prev {
+  z-index: 2;
+  margin-left: 1.5rem;
+  left: 0;
+  position: absolute;
+}
+
+.banners .arrow-next {
+  z-index: 2;
+  margin-right: 1.5rem;
+  right: 0;
+  position: absolute;
+}
+
+.banners .controls-slider {
+  bottom: 1rem;
+  right: 10rem;
 }
