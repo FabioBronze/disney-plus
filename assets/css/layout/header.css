@@ -1,8 +1,8 @@
 .header {
-
   display: flex;
+  padding-top: 2rem;
   position: fixed;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
   width: 100%;
 }
 
