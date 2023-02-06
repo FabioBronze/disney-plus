@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  padding-top: 2rem;
   position: fixed;
   transition: background-color 0.2s;
   width: 100%;
@@ -8,4 +7,10 @@
 
 .header-nav {
   width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-nav {
+    padding-top: 2rem;
+  }
 }
