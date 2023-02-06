@@ -8,3 +8,4 @@
 @import url(./layout/user-menu.css); /*Importação do ficheiro user-menu.css*/
 @import url(./components/logo.css); /*Importação do ficheiro logo.css*/
 @import url(./components/user-profile.css); /*Importação do ficheiro user-profile*/
+@import url(./pages/home/banners.css); /*Importação do ficheiro banners.css*/

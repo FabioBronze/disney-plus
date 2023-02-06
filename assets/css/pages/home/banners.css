@@ -1,0 +1,38 @@
+.banners {
+  padding-top: 9.7rem;
+}
+
+.banner-slide-item {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.banner-slide-link {
+  display: block;
+  position: relative;
+}
+
+.banner-slide-link::before {
+  border: none;
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  inset: 0; /* top: 0 | bottom: 0 | left: 0 | rigth: 0 */
+  transition: border 0.2s;
+}
+
+.banner-slide-link:hover::before {
+  border: 0.1rem solid #fff;
+}
+
+.banner-slide-img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.banner-slide-title {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+}
