@@ -75,12 +75,13 @@
 
 @media screen and (max-width: 1024px) {
   .nav-menu {
+    padding-top: 3rem;
     margin-left: 0.3rem;
     padding: 1rem;
     padding-bottom: 1rem;
   }
 
-  .nav-menu:nth-child(2) {
+  .teste {
     padding-top: 3rem;
   }
 
