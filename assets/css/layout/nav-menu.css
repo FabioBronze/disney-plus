@@ -45,11 +45,11 @@
   width: 100%;
 }
 
-.dropdown {
+.nav-menu-item.dropdown {
   display: none;
 }
 
-.dropdown:hover .nav-submenu {
+.nav-menu-item.dropdown:hover .nav-submenu {
   display: block;
 }
 
@@ -84,7 +84,7 @@
     display: none;
   }
 
-  .dropdown {
+  .nav-menu-item.dropdown {
     display: inline-block;
   }
 
