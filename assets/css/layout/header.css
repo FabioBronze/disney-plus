@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .header-nav {
+  .nav-menu {
     padding-top: 2rem;
   }
 }
