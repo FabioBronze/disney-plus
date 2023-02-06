@@ -79,6 +79,11 @@
     padding: 1rem;
     padding-bottom: 1rem;
   }
+
+  .nav-menu:nth-child(2) {
+    padding-top: 3rem;
+  }
+
   .nav-menu-item.mobile-hidden,
   .nav-menu-text {
     display: none;
