@@ -45,11 +45,11 @@
   width: 100%;
 }
 
-.nav-menu-item.dropdown {
+.dropdown {
   display: none;
 }
 
-.nav-menu-item.dropdown:hover .nav-submenu {
+.dropdown:hover .nav-submenu {
   display: block;
 }
 
@@ -75,7 +75,6 @@
 
 @media screen and (max-width: 1024px) {
   .nav-menu {
-    padding-top: 2rem;
     margin-left: 0.3rem;
     padding: 1rem;
     padding-bottom: 1rem;
@@ -85,7 +84,7 @@
     display: none;
   }
 
-  .nav-menu-item.dropdown {
+  .dropdown {
     display: inline-block;
   }
 
