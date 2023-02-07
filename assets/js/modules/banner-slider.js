@@ -36,7 +36,7 @@ function activeImageTitle(index) {
 
 function getCenterPosition(index) {
   const slide = sliderItems[index];
-  const margin = (window.innerWidth - slide.offsetWidth) / 2;
+  const margin = (document.body.clientWidth - slide.offsetWidth) / 2;
   const centerPosition = margin - slide.offsetWidth * index;
   return centerPosition;
 }
@@ -93,7 +93,7 @@ function onMouseDown(e, index) {
 
 function onMouseUp(e) {
   const slide = e.currentTarget; // Chama o elemento slide. (elemento atual)
-  const movPosQtd = e.type.includes("touch") ? 50 : 150
+  const movPosQtd = e.type.includes("touch") ? 50 : 150;
 
   if (state.MovPosition > movPosQtd) {
     // Mover mais do que 150px.

@@ -2,12 +2,15 @@
   align-items: center;
   display: flex;
   padding-top: 9.7rem;
+  position: relative;
   overflow: hidden;
+  margin-bottom: 2.5rem;
 }
 
 .banner-slide {
   display: flex;
   position: relative;
+
 }
 
 .banner-slide-item {
@@ -88,7 +91,7 @@
     padding-top: 8.6rem;
   }
 
-  .banners .controls-slider{
+  .banners .controls-slider {
     right: 50%;
     transform: translateX(50%);
   }

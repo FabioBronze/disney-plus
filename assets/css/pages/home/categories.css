@@ -1,0 +1,54 @@
+.categories {
+  margin: 3rem auto;
+  padding: 0 1rem;
+  width: 90%;
+}
+
+.categorie-menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.categorie-menu-item {
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.categorie-menu-item:hover {
+  transform: scale(1.05);
+}
+
+.categorie-menu-link {
+  background: linear-gradient(to bottom, #2b2b36, #1c1c25);
+  box-shadow: #0f1119 0rem 2rem 2rem -1rem;
+  border: 0.1rem solid #404048;
+  border-radius: 1rem;
+  display: block;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.categorie-menu-link:hover {
+  background: none;
+  border-color: rgb(228, 228, 228);
+}
+
+.categorie-menu-video {
+  border-radius: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 0.1rem;
+}
+
+.categorie-menu-item:hover .categorie-menu-video {
+  display: block;
+}
+
+.categorie-menu-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
