@@ -93,14 +93,15 @@ function onMouseDown(e, index) {
 
 function onMouseUp(e) {
   const slide = e.currentTarget; // Chama o elemento slide. (elemento atual)
-  if (state.MovPosition > 150) {
+  const movPosQtd = e.type.includes("touch") ? 50 : 150
+
+  if (state.MovPosition > movPosQtd) {
     // Mover mais do que 150px.
     backwardSlide();
-  } else if (state.MovPosition < -150) {
+  } else if (state.MovPosition < -movPosQtd) {
     forwardSlide();
   } else {
-    const calc = getCenterPosition(state.currentSlideIndex);
-    translateSlide(calc);
+    setVisibleSlide(state.currentSlideIndex);
   }
   slide.removeEventListener("mousemove", onMouseMove);
 }
@@ -113,6 +114,28 @@ function onMouseMove(e) {
 function onMouseLeave(e) {
   const slide = e.currentTarget; // Chama o elemento slide. (elemento atual)
   slide.removeEventListener("mousemove", onMouseMove);
+}
+
+function onTouchStart(e, index) {
+  const slide = e.currentTarget; // Chama o elemento slide. (elemento atual)
+  slide.addEventListener("touchmove", onTouchMove);
+  e.clientX = e.touches[0].clientX;
+  onMouseDown(e, index);
+}
+
+function onTouchMove(e) {
+  e.clientX = e.touches[0].clientX;
+  onMouseMove(e);
+}
+
+function onTouchEnd(e) {
+  const slide = e.currentTarget; // Chama o elemento slide. (elemento atual)
+  slide.removeEventListener("touchmove", onTouchMove);
+  onMouseUp(e);
+}
+
+function onResizeWindow() {
+  setVisibleSlide(state.currentSlideIndex);
 }
 
 function setListeners() {
@@ -134,6 +157,18 @@ function setListeners() {
     btnControls[index].addEventListener("click", function (e) {
       onControlButtonClick(e, index);
     });
+    slide.addEventListener("touchstart", function (e) {
+      onTouchStart(e, index);
+    });
+    slide.addEventListener("touchend", onTouchEnd);
+  });
+  let resizeTimeout;
+  window.addEventListener("resize", function (e) {
+    // Ajusta o tamanho das imagens para Mobile.
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function () {
+      onResizeWindow();
+    }, 800);
   });
 }
 

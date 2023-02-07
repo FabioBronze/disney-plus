@@ -78,3 +78,18 @@
   bottom: 1rem;
   right: 13rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .banner-slide-item {
+    width: 80vw;
+  }
+
+  .banners {
+    padding-top: 8.6rem;
+  }
+
+  .banners .controls-slider{
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
