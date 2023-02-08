@@ -1,0 +1,78 @@
+.collection {
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.collection-title {
+  margin: 0 auto;
+  font-weight: normal;
+  width: 90vw;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.movie-carousel {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+}
+
+.movie-carousel-list {
+  display: flex;
+}
+
+.movie-carousel-item {
+  padding: 0 1rem 2.8rem;
+  width: calc(90vw / 5);
+}
+
+.movie-carousel-link {
+  position: relative;
+  display: block;
+}
+
+.movie-carousel-link::before {
+  border: 0.1rem solid #404048;
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  inset: 0; /* top: 0 | bottom: 0 | left: 0 | rigth: 0 */
+  transition: border 0.2s;
+}
+
+.movie-carousel-link:hover::before {
+  border: 0.1rem solid #fff;
+}
+
+.movie-carousel-link:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.movie-carousel-cover {
+  border-radius: 0.3rem;
+  box-shadow: #0f1119 0rem 2rem 2rem -1rem;
+  width: 100%;
+}
+
+.movie-carousel .arrow-prev {
+  z-index: 2;
+  margin-left: 1.5rem;
+  left: 0;
+  position: absolute;
+}
+
+.movie-carousel .arrow-slider {
+  margin-top: -2.5rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.movie-carousel .arrow-next {
+  z-index: 2;
+  margin-right: 1.5rem;
+  right: 0;
+  position: absolute;
+}

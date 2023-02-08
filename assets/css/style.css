@@ -10,5 +10,6 @@
 @import url(./components/user-profile.css); /*Importação do ficheiro user-profile.css*/
 @import url(./components/arrow.css); /*Importação do ficheiro arrow.css*/
 @import url(./components/controls-slider.css); /*Importação do ficheiro controls-slider.css*/
+@import url(./components/collection.css); /*Importação do ficheiro collection.css*/
 @import url(./pages/home/banners.css); /*Importação do ficheiro banners.css*/
 @import url(./pages/home/categories.css); /*Importação do ficheiro categories.css*/
