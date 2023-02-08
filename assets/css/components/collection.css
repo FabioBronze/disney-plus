@@ -15,7 +15,6 @@
 .movie-carousel {
   position: relative;
   display: flex;
-
   align-items: center;
 }
 
@@ -24,7 +23,8 @@
 }
 
 .movie-carousel-item {
-  padding: 0 1rem 2.8rem;
+  margin-bottom: 2.8rem;
+  padding: 0 1rem;
   width: calc(90vw / 5);
 }
 
