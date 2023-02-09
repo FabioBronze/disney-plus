@@ -76,3 +76,27 @@
   right: 0;
   position: absolute;
 }
+
+@media screen and (max-width: 1024px) {
+  .collection {
+    padding-top: 0;
+  }
+
+  .collection-title {
+    width: 85vw;
+  }
+
+  .movie-carousel-item {
+    margin-bottom: 2.8rem;
+    padding: 0 1rem;
+    width: calc(85vw / 2);
+  }
+
+  .movie-carousel .arrow-next {
+    margin-left: 1rem;
+  }
+
+  .movie-carousel .arrow-prev {
+    margin-right: 1rem;
+  }
+}
