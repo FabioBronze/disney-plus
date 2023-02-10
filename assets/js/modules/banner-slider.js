@@ -41,6 +41,30 @@ function getCenterPosition(index) {
   return centerPosition;
 }
 
+function animateTransition(active) {
+  if (active) {
+    slider.style.transition = "transform .3s";
+  } else {
+    slider.style.removeProperty("transition");
+  }
+}
+
+function setArrouButtonsDisplay() {
+  btnPrev.style.display = state.currentSlideIndex === 0 ? "none" : "block"; // Se for true, se for false.
+  btnNext.style.display =
+    state.currentSlideIndex === sliderItems.length - 1 ? "none" : "block"; // Se for true, se for false.
+}
+
+function setVisibleSlide(index) {
+  state.currentSlideIndex = index;
+  const position = getCenterPosition(index);
+  setArrouButtonsDisplay();
+  activeBtnControl(index);
+  activeImageTitle(index);
+  animateTransition(true);
+  translateSlide(position);
+}
+
 function forwardSlide() {
   if (state.currentSlideIndex < sliderItems.length - 1) {
     setVisibleSlide(state.currentSlideIndex + 1);
@@ -55,23 +79,6 @@ function backwardSlide() {
   } else {
     setVisibleSlide(state.currentSlideIndex);
   }
-}
-
-function animateTransition(active) {
-  if (active) {
-    slider.style.transition = "transform .3s";
-  } else {
-    slider.style.removeProperty("transition");
-  }
-}
-
-function setVisibleSlide(index) {
-  state.currentSlideIndex = index;
-  const position = getCenterPosition(index);
-  activeBtnControl(index);
-  activeImageTitle(index);
-  animateTransition(true);
-  translateSlide(position);
 }
 
 function preventDefault(e) {
@@ -103,6 +110,7 @@ function onMouseUp(e) {
   } else {
     setVisibleSlide(state.currentSlideIndex);
   }
+  state.MovPosition = 0;
   slide.removeEventListener("mousemove", onMouseMove);
 }
 

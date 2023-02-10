@@ -10,7 +10,6 @@
 .banner-slide {
   display: flex;
   position: relative;
-
 }
 
 .banner-slide-item {
@@ -57,24 +56,27 @@
   display: block;
 }
 
-.banners .arrow-prev {
-  z-index: 2;
-  margin-left: 1.5rem;
-  left: 0;
-  position: absolute;
-}
-
 .banners .arrow-slider {
+  height: 100%;
   margin-top: -2rem;
   position: absolute;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.banners .arrow-slider:hover {
+  opacity: 1;
+}
+
+.banners .arrow-prev {
+  padding: 0 3.6rem;
+  left: 0;
 }
 
 .banners .arrow-next {
-  z-index: 2;
-  margin-right: 1.5rem;
+  padding: 0 3.6rem;
   right: 0;
-  position: absolute;
 }
 
 .banners .controls-slider {
@@ -89,6 +91,16 @@
 
   .banners {
     padding-top: 8.6rem;
+  }
+
+  .banners .arrow-prev {
+    padding: 0 1rem;
+    left: 0;
+  }
+
+  .banners .arrow-next {
+    padding: 0 1rem;
+    right: 0;
   }
 
   .banners .controls-slider {

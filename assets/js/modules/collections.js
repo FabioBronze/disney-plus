@@ -39,10 +39,18 @@ const animateTransition = (active) => {
   }
 };
 
+const setArrouButtonsDisplay = () => {
+  const { btnPrev, btnNext, state } = collectionData[currentCollectionIndex];
+  btnPrev.style.display = state.currentSlideIndex === 0 ? "none" : "block"; // Se for true, se for false.
+  btnNext.style.display =
+    state.currentSlideIndex === getLastSlideIndex() ? "none" : "block"; // Se for true, se for false.
+};
+
 const setVisibleSlide = (slideIndex) => {
   const { state } = collectionData[currentCollectionIndex];
   state.currentSlideIndex = slideIndex;
   const centerPosition = getCenterPosition(slideIndex);
+  setArrouButtonsDisplay();
   animateTransition(true);
   translateSlide(centerPosition);
 };
@@ -92,6 +100,7 @@ const onMouseUp = (e) => {
   } else {
     setVisibleSlide(state.currentSlideIndex);
   }
+  state.movement = 0;
   const item = e.currentTarget; // Guarda o elemento atual.
   item.removeEventListener("mousemove", onMouseMove);
 };

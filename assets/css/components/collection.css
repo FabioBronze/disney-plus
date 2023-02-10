@@ -57,24 +57,27 @@
   width: 100%;
 }
 
-.movie-carousel .arrow-prev {
-  z-index: 2;
-  margin-left: 1.5rem;
-  left: 0;
-  position: absolute;
-}
-
 .movie-carousel .arrow-slider {
+  height: 100%;
   margin-top: -2.5rem;
   position: absolute;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie-carousel .arrow-slider:hover {
+  opacity: 1;
+}
+
+.movie-carousel .arrow-prev {
+  padding: 0 3.6rem;
+  left: 0;
 }
 
 .movie-carousel .arrow-next {
-  z-index: 2;
-  margin-right: 1.5rem;
+  padding: 0 3.6rem;
   right: 0;
-  position: absolute;
 }
 
 @media screen and (max-width: 1024px) {
@@ -93,10 +96,12 @@
   }
 
   .movie-carousel .arrow-next {
-    margin-left: 1rem;
+    padding: 0 1rem;
+    right: 0;
   }
 
   .movie-carousel .arrow-prev {
-    margin-right: 1rem;
+    padding: 0 1rem;
+    right: 0;
   }
 }
