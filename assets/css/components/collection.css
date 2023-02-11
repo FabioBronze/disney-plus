@@ -102,6 +102,6 @@
 
   .movie-carousel .arrow-prev {
     padding: 0 1rem;
-    right: 0;
+    left: 0;
   }
 }

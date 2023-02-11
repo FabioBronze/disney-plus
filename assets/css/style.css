@@ -6,6 +6,7 @@
 @import url(./layout/header.css); /*Importação do ficheiro header.css*/
 @import url(./layout/nav-menu.css); /*Importação do ficheiro nav-menu.css*/
 @import url(./layout/user-menu.css); /*Importação do ficheiro user-menu.css*/
+@import url(./layout/footer.css); /*Importação do ficheiro footer.css*/
 @import url(./components/logo.css); /*Importação do ficheiro logo.css*/
 @import url(./components/user-profile.css); /*Importação do ficheiro user-profile.css*/
 @import url(./components/arrow.css); /*Importação do ficheiro arrow.css*/

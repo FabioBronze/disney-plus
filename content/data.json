@@ -47,7 +47,7 @@
     "categories": [
       {
         "id": "43f435a4-5188-4d29-b14c-9211bb3519de",
-        "title": "Recomendados",
+        "title": "Recommended for you",
         "slug": "recomendados"
       },
       {
@@ -82,17 +82,17 @@
       },
       {
         "id": "82a1e857-5ccf-4a6d-88a6-83c36dc6812c",
-        "title": "Clássicos Reinventados",
+        "title": "Reinvented Classics",
         "slug": "classicos"
       },
       {
         "id": "dc74e381-3043-4c4b-abae-db1655543ce7",
-        "title": "Em Breve",
+        "title": "Soon",
         "slug": "em-breve"
       },
       {
         "id": "a4c6bccd-f54b-410f-8aeb-6954608412a3",
-        "title": "Documentários",
+        "title": "Documentaries",
         "slug": "documentarios"
       }
     ],
