@@ -7,7 +7,7 @@
 <li/>HTML/CSS</li>
 
 <h1/>Algumas Notas</h1>
-Neste projeto, foi simulado um sistema API com JSON, onde se encontram os filmes que foram implementados no projeto
+Neste projeto, foi simulado um sistema API com JSON, onde se encontram os filmes que foram implementados no projeto.
 
 <h1/>Autor</h1>
 Fábio Bronze
